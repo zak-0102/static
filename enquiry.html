@@ -1,0 +1,90 @@
+<!--Create a enquiry form for a real estate company-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>VGC</title>
+
+    <link rel="stylesheet" href="style1.css">
+
+    <!--Add external bootstrap-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--Add script-->
+    <script src="script.js"></script>
+</head>
+<body>
+    <!--Add a bootstrap nav bar with the following links home, about us for a real estate website-->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!--Add the link for the home page-->
+                <a class="navbar-brand" href="index.html">Vibrant Group of Company</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <!--Add the link for the about us page-->
+                <li><a href="aboutus.php">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+<!--Create a main tag-->
+<main>
+<!--Create a header Enquiry Form and a h2 tag Fill free to communicate with us-->
+    <header class="form-head">
+        <h2>Enquiry Form</h2>
+        <h1></h1>Fill free to communicate with us!!</h1>
+    </header>
+    <!--Create a bootstrap card-->
+    <div class="card">
+        <div class="container">
+            <!--Create a form-->
+            <form  method="POST" onsubmit="return validateForm()">
+                <!--Create a div container-->
+                <div class="form-group">
+                    <!--Create a label for the name input-->
+                    <label for="name">Name:</label>
+                    <!--Create a input field for the name-->
+                    <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+                </div>
+                <!--Create a div container-->
+                <div class="form-group">
+                    <!--Create a label for the surname input-->
+                    <label for="surname">Surname:</label>
+                    <!--Create a input field for the surname-->
+                    <input type="text" class="form-control" id="surname" placeholder="Enter surname" name="surname">
+                </div>
+                <!--Create a div container-->
+                <div class="form-group">
+                    <!--Create a label for the email input-->
+                    <label for="email">Email:</label>
+                    <!--Create a input field for the email-->
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+                <!--Create a div container-->
+                <div class="form-group">
+                    <!--Create a label for the cell number input-->
+                    <label for="cell">Cell Number:</label>
+                    <!--Create a input field for the cell number-->
+                    <input type="text" class="form-control" id="cell" placeholder="Enter cell number" name="cell">
+                </div>
+                <!--Create a div container-->
+                <div class="form-group">
+                    <!--Create a label for the message input-->
+                    <label for="message">Message:</label>
+                    <!--Create a text area for the message-->
+                    <textarea class="form-control" id="message" rows="5" name="message"></textarea>
+                </div>
+<!--Create a bootstrap button in center to navigate to enquiry form-->
+<div class="button">
+    <a href="index.html" class="btn btn-info" role="button">Enquiry</a>
+</div>
+            </form>
+        </div>  
+    </div>
+</main>
+</body>
+</html>
